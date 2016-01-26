@@ -19,20 +19,22 @@ namespace Aidan_sFirstProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //object can be any var type
-            object myObj = true;
-            MessageBox.Show(myObj.ToString());
-
-            //changes text property of button1
-            button1.Text = "Aidan";
-
-            button1.Height = 60;
-
-            textBox1.Text = "Aidan";
-            textBox1.MaxLength = 2;
-
-            //disables button
-            button1.Enabled = false;
+            if(textBox1.Text == "Aidan")
+            {
+                MessageBox.Show("Hello");
+            }
+            else if(textBox1.Text == "Bob")
+            {
+                MessageBox.Show("Yo");
+            }
+            else if(textBox1.Text == "Joe")
+            {
+                MessageBox.Show("Hi");
+            }
+            else
+            {
+                MessageBox.Show("Sorry your name isn't important");
+            }
         }
 
         private void button2_MouseHover(object sender, EventArgs e)
