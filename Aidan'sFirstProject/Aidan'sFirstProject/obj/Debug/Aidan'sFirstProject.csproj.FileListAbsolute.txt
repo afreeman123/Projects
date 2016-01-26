@@ -1,0 +1,9 @@
+C:\Users\afreeman123\Documents\Visual Studio 2015\Projects\Aidan'sFirstProject\Aidan'sFirstProject\obj\Debug\Aidan'sFirstProject.csprojResolveAssemblyReference.cache
+C:\Users\afreeman123\Documents\Visual Studio 2015\Projects\Aidan'sFirstProject\Aidan'sFirstProject\obj\Debug\Aidan_sFirstProject.Form1.resources
+C:\Users\afreeman123\Documents\Visual Studio 2015\Projects\Aidan'sFirstProject\Aidan'sFirstProject\obj\Debug\Aidan_sFirstProject.Properties.Resources.resources
+C:\Users\afreeman123\Documents\Visual Studio 2015\Projects\Aidan'sFirstProject\Aidan'sFirstProject\obj\Debug\Aidan'sFirstProject.csproj.GenerateResource.Cache
+C:\Users\afreeman123\Documents\Visual Studio 2015\Projects\Aidan'sFirstProject\Aidan'sFirstProject\bin\Debug\AidansFirstProject.exe.config
+C:\Users\afreeman123\Documents\Visual Studio 2015\Projects\Aidan'sFirstProject\Aidan'sFirstProject\bin\Debug\AidansFirstProject.exe
+C:\Users\afreeman123\Documents\Visual Studio 2015\Projects\Aidan'sFirstProject\Aidan'sFirstProject\bin\Debug\AidansFirstProject.pdb
+C:\Users\afreeman123\Documents\Visual Studio 2015\Projects\Aidan'sFirstProject\Aidan'sFirstProject\obj\Debug\AidansFirstProject.exe
+C:\Users\afreeman123\Documents\Visual Studio 2015\Projects\Aidan'sFirstProject\Aidan'sFirstProject\obj\Debug\AidansFirstProject.pdb
