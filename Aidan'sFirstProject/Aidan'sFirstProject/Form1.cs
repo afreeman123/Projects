@@ -19,24 +19,7 @@ namespace Aidan_sFirstProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*if(textBox1.Text == "Aidan")
-            {
-                MessageBox.Show("Hello");
-            }
-            else if(textBox1.Text == "Bob")
-            {
-                MessageBox.Show("Yo");
-            }
-            else if(textBox1.Text == "Joe")
-            {
-                MessageBox.Show("Hi");
-            }
-            else
-            {
-                MessageBox.Show("Sorry your name isn't important");
-            }*/
-
-            string myString = null;
+            /*string myString = null;
 
             if(!checkBox1.Checked)
             {
@@ -61,6 +44,12 @@ namespace Aidan_sFirstProject
             if(!String.IsNullOrEmpty(myString))
             {
                 MessageBox.Show(myString);
+            }*/
+
+            int i = 0;
+            if (textBox1.Text == "Aidan" || checkBox1.Checked)
+            {                            
+                    MessageBox.Show("Hello");   
             }
 
         }
