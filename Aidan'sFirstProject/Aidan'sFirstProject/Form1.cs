@@ -19,7 +19,7 @@ namespace Aidan_sFirstProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(textBox1.Text == "Aidan")
+            /*if(textBox1.Text == "Aidan")
             {
                 MessageBox.Show("Hello");
             }
@@ -34,14 +34,41 @@ namespace Aidan_sFirstProject
             else
             {
                 MessageBox.Show("Sorry your name isn't important");
+            }*/
+
+            string myString = null;
+
+            if(!checkBox1.Checked)
+            {
+                myString += "The checkbox is not checked";
             }
+
+            bool myBool = true;
+            if(myBool)
+            {
+                myString += "MyBool is true";
+            }
+
+            int i = 3;
+            int b = 6;
+            int c = 0;
+
+            if(i>c)
+            {
+                myString += "i is greater than c";
+            }
+
+            if(!String.IsNullOrEmpty(myString))
+            {
+                MessageBox.Show(myString);
+            }
+
         }
 
         private void button2_MouseHover(object sender, EventArgs e)
         {
             MessageBox.Show("You are hovering your mouse over the button");
         }
-
     }
         
 }
