@@ -19,13 +19,7 @@ namespace Aidan_sFirstProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*int i = 0;
-            if (textBox1.Text == "Aidan" || checkBox1.Checked)
-            {                            
-                    MessageBox.Show("Hello");   
-            }*/
-
-            int i = 17;
+            /*int i = 17;
 
             switch(textBox1.Text)
             {
@@ -51,7 +45,13 @@ namespace Aidan_sFirstProject
                 default:
                     MessageBox.Show("Your age isn't relevant");
                     break;
-            }
+            }*/
+
+            int a = 5;
+            int b = 3;
+            //MessageBox can only display string
+            MessageBox.Show((a + b).ToString());
+
 
         }
 
