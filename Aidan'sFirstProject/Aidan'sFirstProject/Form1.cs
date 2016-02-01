@@ -19,37 +19,38 @@ namespace Aidan_sFirstProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*string myString = null;
-
-            if(!checkBox1.Checked)
-            {
-                myString += "The checkbox is not checked";
-            }
-
-            bool myBool = true;
-            if(myBool)
-            {
-                myString += "MyBool is true";
-            }
-
-            int i = 3;
-            int b = 6;
-            int c = 0;
-
-            if(i>c)
-            {
-                myString += "i is greater than c";
-            }
-
-            if(!String.IsNullOrEmpty(myString))
-            {
-                MessageBox.Show(myString);
-            }*/
-
-            int i = 0;
+            /*int i = 0;
             if (textBox1.Text == "Aidan" || checkBox1.Checked)
             {                            
                     MessageBox.Show("Hello");   
+            }*/
+
+            int i = 17;
+
+            switch(textBox1.Text)
+            {
+                case "Aidan":
+                    MessageBox.Show("Hello");
+                    break;
+                case "Bob":
+                    MessageBox.Show("Yo");
+                    break;
+                default:
+                    MessageBox.Show("Your name is not important");
+                    break;
+            }
+
+            switch(i)
+            {
+                case 4:
+                    MessageBox.Show("You are too young");
+                    break;
+                case 17:
+                    MessageBox.Show("You can drive");
+                    break;
+                default:
+                    MessageBox.Show("Your age isn't relevant");
+                    break;
             }
 
         }
