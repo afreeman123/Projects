@@ -19,38 +19,17 @@ namespace Aidan_sFirstProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*int i = 17;
-
-            switch(textBox1.Text)
-            {
-                case "Aidan":
-                    MessageBox.Show("Hello");
-                    break;
-                case "Bob":
-                    MessageBox.Show("Yo");
-                    break;
-                default:
-                    MessageBox.Show("Your name is not important");
-                    break;
-            }
-
-            switch(i)
-            {
-                case 4:
-                    MessageBox.Show("You are too young");
-                    break;
-                case 17:
-                    MessageBox.Show("You can drive");
-                    break;
-                default:
-                    MessageBox.Show("Your age isn't relevant");
-                    break;
-            }*/
-
-            int a = 5;
+            /*int a = 5;
             int b = 3;
             //MessageBox can only display string
-            MessageBox.Show((a + b).ToString());
+            MessageBox.Show((a + b).ToString());*/
+
+            string[] Names = new string[5];
+            Names[0] = "Aidan";
+            MessageBox.Show(Names[0]);
+
+            int[] numbers = { 555, 666, 777 };
+            MessageBox.Show(numbers[1].ToString());
 
 
         }
