@@ -19,18 +19,26 @@ namespace Aidan_sFirstProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*int a = 5;
-            int b = 3;
-            //MessageBox can only display string
-            MessageBox.Show((a + b).ToString());*/
-
+            /*
             string[] Names = new string[5];
             Names[0] = "Aidan";
             MessageBox.Show(Names[0]);
 
             int[] numbers = { 555, 666, 777 };
-            MessageBox.Show(numbers[1].ToString());
+            MessageBox.Show(numbers[1].ToString());*/
 
+            //A list is like an array but you do not have to specify the length
+            List<string> Names = new List<string>();
+
+            Names.Add("Aidan");
+            Names.Add("Joe");
+            MessageBox.Show(Names[0]);
+
+            List<int> Numbers = new List<int>();
+
+            Numbers.Add(5);
+            Numbers.Add(667);
+            MessageBox.Show(Numbers[1].ToString());
 
         }
 
