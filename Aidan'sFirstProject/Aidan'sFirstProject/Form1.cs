@@ -20,21 +20,6 @@ namespace Aidan_sFirstProject
         private void button1_Click(object sender, EventArgs e)
         {
             /*
-            for (int i=0;i<5;i++)
-            {
-                MessageBox.Show("hello " + i.ToString());
-            }
-
-            List < int > numbers = new List<int>();
-            numbers.Add(5);
-            numbers.Add(10);
-            numbers.Add(15);
-
-            foreach (int s in numbers)
-            {
-                MessageBox.Show(s.ToString());
-            }*/
-
             int i = 0;
 
             //pre-check while loop
@@ -50,7 +35,21 @@ namespace Aidan_sFirstProject
                 textBox1.Text += i.ToString();
                 i++;
             } while (i < 15);
+            */
 
+            try //execute this code
+            {
+                string[] names = new string[2];//"", ""
+                string s = names[1];
+            }
+            catch(Exception ex) //if error
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally //execute this code after error checking regardless of failure or not
+            {
+                MessageBox.Show("Your code is done");
+            }
         }
 
         private void button2_MouseHover(object sender, EventArgs e)
