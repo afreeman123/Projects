@@ -20,19 +20,6 @@ namespace Aidan_sFirstProject
         private void button1_Click(object sender, EventArgs e)
         {
             /*
-            //A list is like an array but you do not have to specify the length
-            List<string> Names = new List<string>();
-
-            Names.Add("Aidan");
-            Names.Add("Joe");
-            MessageBox.Show(Names[0]);
-
-            List<int> Numbers = new List<int>();
-
-            Numbers.Add(5);
-            Numbers.Add(667);
-            MessageBox.Show(Numbers[1].ToString());*/
-
             for (int i=0;i<5;i++)
             {
                 MessageBox.Show("hello " + i.ToString());
@@ -46,7 +33,23 @@ namespace Aidan_sFirstProject
             foreach (int s in numbers)
             {
                 MessageBox.Show(s.ToString());
+            }*/
+
+            int i = 0;
+
+            //pre-check while loop
+            while (i < 10)
+            {
+                textBox1.Text += i.ToString();
+                i++;
             }
+
+            //post-check while loop
+            do
+            {
+                textBox1.Text += i.ToString();
+                i++;
+            } while (i < 15);
 
         }
 
