@@ -20,23 +20,6 @@ namespace Aidan_sFirstProject
         private void button1_Click(object sender, EventArgs e)
         {
             /*
-            int i = 0;
-
-            //pre-check while loop
-            while (i < 10)
-            {
-                textBox1.Text += i.ToString();
-                i++;
-            }
-
-            //post-check while loop
-            do
-            {
-                textBox1.Text += i.ToString();
-                i++;
-            } while (i < 15);
-            */
-
             try //execute this code
             {
                 string[] names = new string[2];//"", ""
@@ -49,12 +32,23 @@ namespace Aidan_sFirstProject
             finally //execute this code after error checking regardless of failure or not
             {
                 MessageBox.Show("Your code is done");
-            }
+            }*/
+
+            //call method message
+            Message("Hello World!", "From Aidan");
+        }
+
+        //New method
+        void Message(string message, string title)
+        {
+            MessageBox.Show(message, title);
         }
 
         private void button2_MouseHover(object sender, EventArgs e)
         {
-            MessageBox.Show("You are hovering your mouse over the button");
+            //MessageBox.Show("You are hovering your mouse over the button");
+
+            Message("My name is Aidan", "From Aidan");
         }
     }
         
