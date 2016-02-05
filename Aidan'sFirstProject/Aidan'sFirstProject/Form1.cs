@@ -20,28 +20,34 @@ namespace Aidan_sFirstProject
         private void button1_Click(object sender, EventArgs e)
         {
             /*
-            try //execute this code
-            {
-                string[] names = new string[2];//"", ""
-                string s = names[1];
-            }
-            catch(Exception ex) //if error
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally //execute this code after error checking regardless of failure or not
-            {
-                MessageBox.Show("Your code is done");
-            }*/
+             //call method message
+             Message("Hello World!", "From Aidan");*/
 
-            //call method message
-            Message("Hello World!", "From Aidan");
+            MessageBox.Show(MyMethod("Aidan"));
+            MessageBox.Show(MyInt().ToString());
+            MessageBox.Show(MyBool().ToString());
         }
 
         //New method
         void Message(string message, string title)
         {
             MessageBox.Show(message, title);
+        }
+
+        //returns a string
+        string MyMethod(string name)
+        {
+            return name;
+        }
+
+        int MyInt()
+        {
+            return 6;
+        }
+
+        bool MyBool()
+        {
+            return true;
         }
 
         private void button2_MouseHover(object sender, EventArgs e)
