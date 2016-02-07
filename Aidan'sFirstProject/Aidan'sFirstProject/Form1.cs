@@ -19,42 +19,19 @@ namespace Aidan_sFirstProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*
-             //call method message
-             Message("Hello World!", "From Aidan");*/
+            for(int i=0; i<10; i++)
+            {
+                if (i == 0) continue; // skips rest of code in for loop when i==0
 
-            MessageBox.Show(MyMethod("Aidan"));
-            MessageBox.Show(MyInt().ToString());
-            MessageBox.Show(MyBool().ToString());
-        }
+                if (i==2) break; //breaks out of for loop when i==2
 
-        //New method
-        void Message(string message, string title)
-        {
-            MessageBox.Show(message, title);
-        }
-
-        //returns a string
-        string MyMethod(string name)
-        {
-            return name;
-        }
-
-        int MyInt()
-        {
-            return 6;
-        }
-
-        bool MyBool()
-        {
-            return true;
+                textBox1.Text += i.ToString();
+            }
         }
 
         private void button2_MouseHover(object sender, EventArgs e)
         {
-            //MessageBox.Show("You are hovering your mouse over the button");
-
-            Message("My name is Aidan", "From Aidan");
+            //Message("My name is Aidan", "From Aidan");
         }
     }
         
