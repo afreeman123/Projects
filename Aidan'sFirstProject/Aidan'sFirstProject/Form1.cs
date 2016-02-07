@@ -6,7 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Windows.Forms; //System is namespace, Windows is a subnamespace, Forms is a subnamespace of Windows
+using MyNamespace;
 
 namespace Aidan_sFirstProject
 {
@@ -36,3 +37,4 @@ namespace Aidan_sFirstProject
     }
         
 }
+Class1.cs
