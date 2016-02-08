@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace MyNamespace
 {
@@ -17,11 +18,15 @@ namespace MyNamespace
             Name = name;
         }
 
-        //when multiple constructors, have to call different types of parameters
-        //i.e. can't have 2 constructors passing one string parameter
-        public MyClass()
+        //method
+        public string name()
         {
+            return Name;
+        }
 
+        public static void ShowMessage(string message)
+        {
+            MessageBox.Show(message);
         }
     }
 }

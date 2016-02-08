@@ -20,9 +20,7 @@ namespace Aidan_sFirstProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MyClass mc = new MyClass("Aidan");
-
-
+            MyClass.ShowMessage("Aidan");
         }
 
         private void button2_MouseHover(object sender, EventArgs e)
@@ -32,4 +30,3 @@ namespace Aidan_sFirstProject
     }
         
 }
-Class1.cs
