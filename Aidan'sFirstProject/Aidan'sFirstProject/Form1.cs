@@ -20,14 +20,9 @@ namespace Aidan_sFirstProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            for(int i=0; i<10; i++)
-            {
-                if (i == 0) continue; // skips rest of code in for loop when i==0
+            MyClass mc = new MyClass("Aidan");
 
-                if (i==2) break; //breaks out of for loop when i==2
 
-                textBox1.Text += i.ToString();
-            }
         }
 
         private void button2_MouseHover(object sender, EventArgs e)

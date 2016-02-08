@@ -6,13 +6,22 @@ using System.Threading.Tasks;
 
 namespace MyNamespace
 {
-    namespace MySubNamespace
-    {
-
-    }
-
     class MyClass
     {
+        //private 
+        string Name;
 
+        //constructor
+        public MyClass(string name)
+        {
+            Name = name;
+        }
+
+        //when multiple constructors, have to call different types of parameters
+        //i.e. can't have 2 constructors passing one string parameter
+        public MyClass()
+        {
+
+        }
     }
 }
