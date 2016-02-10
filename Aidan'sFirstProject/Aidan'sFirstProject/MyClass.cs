@@ -9,6 +9,14 @@ namespace MyNamespace
 {
     class MyClass
     {
+        //integer array that has representations of integers inside of it
+        enum Names
+        {
+            Aidan = 1,
+            Joe = 4,
+            Bob //by default would equal 4
+        }
+
         //private 
         string Name;
 
@@ -24,9 +32,17 @@ namespace MyNamespace
             return Name;
         }
 
+        Names myName = Names.Aidan;
+
         public static void ShowMessage(string message)
         {
             MessageBox.Show(message);
+        }
+
+        //can overload method as long as the parameters are different
+        public static void ShowMessage(int message)
+        {
+            MessageBox.Show(message.ToString());
         }
     }
 }
