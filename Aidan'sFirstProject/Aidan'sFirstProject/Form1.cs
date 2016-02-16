@@ -21,6 +21,7 @@ namespace Aidan_sFirstProject
         private void button1_Click(object sender, EventArgs e)
         {
             MyClass aidan = new MyClass("Aidan");
+            aidan.Name = "";
             MessageBox.Show(aidan.Name);
         }
 
