@@ -9,27 +9,13 @@ namespace MyNamespace
 {
     class MyClass
     {
-        string myString;
+        //has to be static as method is static
+        static Exception emptyString = new Exception("You can't set this string equal to an Empty String");
 
-        //constructor
-        public MyClass(string name)
+        public static void CheckString(string myString)
         {
-            myString = name;
+            if (myString == "") throw emptyString;
         }
-
-        //property Name
-        public string Name
-        {
-            get { return myString; }
-            set
-            {
-                if (value == "")
-                {
-                    MessageBox.Show("You can't do that");
-                }
-            }
-        }
-
        
     }
 }
