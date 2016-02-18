@@ -9,13 +9,31 @@ namespace MyNamespace
 {
     class MyClass
     {
-        //has to be static as method is static
-        static Exception emptyString = new Exception("You can't set this string equal to an Empty String");
+        //available to all using the namespace
+        public string name = "Bob";
 
-        public static void CheckString(string myString)
+        //available only to the namespace
+        protected int Age = 10;
+
+        //available only to the class where it is defined
+        private string thing = "Hello";
+
+        public void ShowMessage(string Message)
         {
-            if (myString == "") throw emptyString;
+            MessageBox.Show(Message);
         }
-       
+    }
+
+    //Inheriting a class
+    class MySecondClass : MyClass
+    {
+        public string HairColour = "Brown";
+
+        //overrides the method inherited in MyClass
+        public new void ShowMessage(string Message)
+        {
+            //base class is MyClass, MySecondClass is derived
+            MessageBox.Show(Message, "My Title");
+        }
     }
 }
