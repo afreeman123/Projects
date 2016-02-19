@@ -24,8 +24,8 @@ namespace MyNamespace
         }
     }
 
-    //Inheriting a class
-    class MySecondClass : MyClass
+    //Inheriting a class - can only inherit one class
+    class MySecondClass : MyClass, IMyInterface
     {
         public string HairColour = "Brown";
 
@@ -35,5 +35,21 @@ namespace MyNamespace
             //base class is MyClass, MySecondClass is derived
             MessageBox.Show(Message, "My Title");
         }
+
+        public void MyVoid()
+        {
+            base.ShowMessage("My Void");
+        }
+    }
+
+    class MyThirdClass : MySecondClass
+    {
+
+    }
+
+    //interfaces can create names for methods, properties, indexes etc.
+    interface IMyInterface
+    {
+        void MyVoid();
     }
 }
