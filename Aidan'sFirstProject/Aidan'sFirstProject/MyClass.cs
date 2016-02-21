@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace MyNamespace
 {
-    struct Client : IClient
+    struct Client
     {
         public Client(string name, int age)
         {
