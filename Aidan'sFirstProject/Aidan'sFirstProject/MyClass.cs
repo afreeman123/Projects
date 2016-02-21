@@ -7,17 +7,28 @@ using System.Windows.Forms;
 
 namespace MyNamespace
 {
-    class MyClass
+    struct Client : IClient
     {
-        public string this[int index]
+        public Client(string name, int age)
         {
-            get
-            {
-                return MyArray[index];
-            }
-            set { MyArray[index] = value; }
+            Name = name;
+            Age = age;
         }
-        string[] MyArray = { "Aidan", "Bob", "Joe" };
 
+        public string Name;
+        public int Age;
+
+        public void ClearClientInfo()
+        {
+            Name = "";
+            Age = 0;
+        }
     }
+
+    //cant have multiple structs
+
+    /*interface IClient
+    {
+        public string Name;
+    }*/
 }
