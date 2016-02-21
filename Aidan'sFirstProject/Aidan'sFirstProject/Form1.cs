@@ -20,8 +20,9 @@ namespace Aidan_sFirstProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MySecondClass aidan = new MySecondClass();
-            aidan.MyVoid();
+            MyClass aidan = new MyClass();
+            aidan[1] = "Dylan";
+            MessageBox.Show(aidan[1]);
         }
 
         private void button2_MouseHover(object sender, EventArgs e)
