@@ -20,14 +20,8 @@ namespace Aidan_sFirstProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Client client1 = new Client("Aidan", 21);
-            client1.Name = "Aidan";
-            client1.Age = 21;
-            client1.ClearClientInfo();
-
-            Client client2 = new Client();
-            client2.Name = "Adam";
-            client2.Age = 15;
+            MyClass mc = new MyClass();
+            mc.ShowMessage("Aidan");
         }
 
         private void button2_MouseHover(object sender, EventArgs e)

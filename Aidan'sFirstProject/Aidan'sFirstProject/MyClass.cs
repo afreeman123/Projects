@@ -7,22 +7,13 @@ using System.Windows.Forms;
 
 namespace MyNamespace
 {
-    struct Client
+    //a part of the class
+    partial class MyClass
     {
-        public Client(string name, int age)
-        {
-            Name = name;
-            Age = age;
-        }
+        public string Name = "Mr. Smith";
+        public int Age = 30;
 
-        public string Name;
-        public int Age;
-
-        public void ClearClientInfo()
-        {
-            Name = "";
-            Age = 0;
-        }
+        partial void Message(string message);
     }
 
     //cant have multiple structs
