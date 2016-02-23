@@ -7,13 +7,26 @@ using System.Windows.Forms;
 
 namespace MyNamespace
 {
-    //a part of the class
-    partial class MyClass
+    //cannot create an instance of an abstract class
+    abstract class MyClass
     {
         public string Name = "Mr. Smith";
         public int Age = 30;
 
-        partial void Message(string message);
+        public static void Message(string message)
+        {
+            MessageBox.Show(message);
+        }
+
+        public abstract void ShowMessage(string message);
+    }
+
+    class MySecondClass : MyClass
+    {
+        public override void ShowMessage(string message)
+        {
+            MessageBox.Show(message);
+        }
     }
 
     //cant have multiple structs
