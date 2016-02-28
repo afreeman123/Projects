@@ -7,32 +7,27 @@ using System.Windows.Forms;
 
 namespace MyNamespace
 {
-    //cannot create an instance of an abstract class
-    abstract class MyClass
+    class MyClass
     {
-        public string Name = "Mr. Smith";
-        public int Age = 30;
+        //delegate
+        delegate void MyDelegate(string myString);
 
-        public static void Message(string message)
+        public void ShowThoseMessages()
+        {
+            MyDelegate md = new MyDelegate(ShowMessage);
+            md += ShowAnotherMessage;
+
+            md("Aidan");
+        }
+
+        void ShowMessage(string message)
         {
             MessageBox.Show(message);
         }
 
-        public abstract void ShowMessage(string message);
-    }
-
-    class MySecondClass : MyClass
-    {
-        public override void ShowMessage(string message)
+        void ShowAnotherMessage(string a)
         {
-            MessageBox.Show(message);
+            MessageBox.Show(a, "Test");
         }
     }
-
-    //cant have multiple structs
-
-    /*interface IClient
-    {
-        public string Name;
-    }*/
 }
