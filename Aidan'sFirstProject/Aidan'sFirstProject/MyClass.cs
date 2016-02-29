@@ -9,25 +9,20 @@ namespace MyNamespace
 {
     class MyClass
     {
-        //delegate
-        delegate void MyDelegate(string myString);
+        //event has a subscriber method which is called when the event is raised
+        //special type of delegate where you only use += and -= to add and take methods away
+        public event EventHandler OnPropertyChanged;
 
-        public void ShowThoseMessages()
+        string name = "";
+
+        public string Name
         {
-            MyDelegate md = new MyDelegate(ShowMessage);
-            md += ShowAnotherMessage;
-
-            md("Aidan");
-        }
-
-        void ShowMessage(string message)
-        {
-            MessageBox.Show(message);
-        }
-
-        void ShowAnotherMessage(string a)
-        {
-            MessageBox.Show(a, "Test");
+            get { return name; }
+            set
+            {
+                name = value;
+                OnPropertyChanged(this, new EventArgs());
+            }
         }
     }
 }

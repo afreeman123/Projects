@@ -21,7 +21,13 @@ namespace Aidan_sFirstProject
         private void button1_Click(object sender, EventArgs e)
         {
             MyClass mc = new MyClass();
-            mc.ShowThoseMessages();
+            mc.OnPropertyChanged += Mc_OnPropertyChanged;
+            mc.Name = "Aidan";
+        }
+
+        private void Mc_OnPropertyChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show("The Property has changed");
         }
 
         private void button2_MouseHover(object sender, EventArgs e)
