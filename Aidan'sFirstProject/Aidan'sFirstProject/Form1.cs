@@ -20,9 +20,18 @@ namespace Aidan_sFirstProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MyClass mc = new MyClass();
-            mc.OnPropertyChanged += Mc_OnPropertyChanged;
-            mc.Name = "Aidan";
+            /*string myString = "";
+            if(checkBox1.Checked)
+            {
+                myString = "It's checked";
+
+            }else
+            {
+                myString = "It's not checked";
+            }*/
+
+            //Ternary Operator
+            MessageBox.Show(checkBox1.Checked ? "It's checked" : "It's not checked");
         }
 
         private void Mc_OnPropertyChanged(object sender, EventArgs e)
