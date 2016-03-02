@@ -20,24 +20,25 @@ namespace Aidan_sFirstProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*string myString = "";
-            if(checkBox1.Checked)
+            OpenFileDialog ofd = new OpenFileDialog();
+
+            //Filter what can be selected from explorer
+            ofd.Filter = "PNG Image|*.png|DOC|*.docx";
+
+            //Opens windows explorer from which you can select files
+            if(ofd.ShowDialog() == DialogResult.OK)
             {
-                myString = "It's checked";
+                //shows file path as well as file name
+                MessageBox.Show(ofd.FileName);
+            }
 
-            }else
+            if (ofd.ShowDialog() == DialogResult.OK)
             {
-                myString = "It's not checked";
-            }*/
-
-            //Ternary Operator
-            MessageBox.Show(checkBox1.Checked ? "It's checked" : "It's not checked");
+                //Shows only the file name
+                MessageBox.Show(ofd.SafeFileName);
+            }
         }
-
-        private void Mc_OnPropertyChanged(object sender, EventArgs e)
-        {
-            MessageBox.Show("The Property has changed");
-        }
+        
 
         private void button2_MouseHover(object sender, EventArgs e)
         {
