@@ -20,23 +20,28 @@ namespace Aidan_sFirstProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
+            //limited from 0 to 256
+            byte myByte = 255;
+            //sbyte can be negative int32
+            sbyte mySbyte = -1;
 
-            //Filter what can be selected from explorer
-            ofd.Filter = "PNG Image|*.png|DOC|*.docx";
+            short myShort = -2144;
+            Int16 int16 = myShort;
 
-            //Opens windows explorer from which you can select files
-            if(ofd.ShowDialog() == DialogResult.OK)
-            {
-                //shows file path as well as file name
-                MessageBox.Show(ofd.FileName);
-            }
+            int myInt = 0;
+            Int32 int32 = myInt;
 
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                //Shows only the file name
-                MessageBox.Show(ofd.SafeFileName);
-            }
+            long myLong = 0;
+            Int64 int64 = myLong;
+
+            //no limit to how big or small but only limited to 7 digits
+            float myFloat = 12375476435;
+
+            MessageBox.Show(myFloat.ToString());
+
+            double d = 0.5;
+
+            char myChar = 'd';
         }
         
 
